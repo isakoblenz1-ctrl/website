@@ -389,6 +389,7 @@ h1, h2, h3, h4 { margin: 0; font-weight: 400; letter-spacing: -0.01em; }
 .logo { display: inline-flex; align-items: center; gap: 12px; font-family: var(--font-display); font-size: 22px; letter-spacing: -0.01em; color: var(--ink); }
 .logo .mark { width: 38px; height: 38px; display: grid; place-items: center; }
 .logo .mark svg { width: 100%; height: 100%; }
+.logo .mark img { width: 100%; height: 100%; object-fit: contain; border-radius: 50%; }
 .logo .wm { display: flex; flex-direction: column; line-height: 0.95; }
 .logo .wm .one { font-family: var(--font-display); font-size: 22px; }
 .logo .wm .two { font-size: 9px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-muted); margin-top: 2px; font-family: var(--font-body); }
@@ -414,6 +415,9 @@ h1, h2, h3, h4 { margin: 0; font-weight: 400; letter-spacing: -0.01em; }
 .team-card .role { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); font-weight: 500; margin-bottom: 6px; }
 .team-card h3 { font-family: var(--font-display); font-size: 24px; margin-bottom: 4px; }
 .team-card .from { font-size: 12px; color: var(--ink-muted); }
+.team-card--open { border-style: dashed; border-color: var(--line); background: transparent; }
+.team-card .photo.open { display: grid; place-items: center; background: linear-gradient(135deg, var(--cream-warm), var(--paper)); }
+.team-card .photo.open span { font-family: var(--font-display); font-size: 72px; color: var(--marigold); opacity: 0.7; }
 
 /* Values */
 .values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
@@ -638,8 +642,29 @@ html[data-anim="medium"] .marquee-track { animation-duration: 60s; }
 html[data-anim="bold"] .marquee-track { animation-duration: 28s; }
 
 /* ===================== RESPONSIVE ===================== */
+/* Form helpers (consent, status, success) */
+.consent { display: flex; gap: 10px; align-items: flex-start; margin-top: 16px; font-size: 13px; color: var(--ink-soft); line-height: 1.5; cursor: pointer; }
+.consent input { margin-top: 3px; flex-shrink: 0; accent-color: var(--saffron); width: 16px; height: 16px; }
+.consent a { color: var(--accent); }
+.form-status { margin-top: 14px; font-size: 14px; min-height: 1px; }
+.form-status.err { color: var(--saffron-deep); }
+.form-status.ok { color: var(--peacock); }
+.form-success { text-align: center; padding: 16px 8px; }
+.form-success h3 { font-family: var(--font-display); font-size: 28px; margin-bottom: 10px; }
+.form-success p { color: var(--ink-soft); line-height: 1.6; margin-bottom: 18px; }
+
+/* Founder section */
+.founder-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
+.founder-photo { position: relative; }
+.founder-photo img { width: 100%; height: auto; max-height: 560px; object-fit: cover; border-radius: 20px; display: block; box-shadow: 0 30px 60px -30px rgba(20,20,28,0.45); }
+.founder-badge { position: absolute; bottom: 18px; left: 18px; background: var(--saffron); color: var(--cream); padding: 8px 18px; border-radius: 999px; font-size: 18px; box-shadow: 0 8px 20px -8px rgba(232,93,4,0.7); }
+.founder-role { font-size: 14px; letter-spacing: 0.02em; color: var(--accent); font-weight: 600; margin-top: 8px; }
+.founder-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; align-items: center; }
+
 @media (max-width: 980px) {
   .hero-grid { grid-template-columns: 1fr; }
+  .founder-grid { grid-template-columns: 1fr; }
+  .founder-photo img { max-height: 460px; }
   .collage { height: 460px; margin-top: 32px; }
   .events-grid, .features, .team-grid, .values, .blogs, .blog-grid-3 { grid-template-columns: 1fr 1fr; }
   .features { grid-template-columns: 1fr 1fr; }

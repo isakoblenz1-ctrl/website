@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="robots" content="noindex, nofollow"/>
+<title>Admin Onboarding · ISAK Koblenz</title>
+<link rel="icon" type="image/png" href="assets/img/logo.png"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+<style>
+  .doc { max-width: 760px; margin: 0 auto; padding: 40px 22px 80px; }
+  .doc h1 { font-family: var(--font-display); font-size: clamp(30px,5vw,44px); margin-bottom: 8px; }
+  .doc h2 { font-family: var(--font-display); font-size: 24px; margin: 36px 0 10px; }
+  .doc p, .doc li { line-height: 1.7; color: var(--ink-soft); }
+  .doc ul, .doc ol { padding-left: 22px; margin: 8px 0; }
+  .doc li { margin-bottom: 6px; }
+  .doc code { background: var(--cream-warm); padding: 2px 6px; border-radius: 6px; font-size: 90%; }
+  .doc .card { background: var(--paper); border: 1px solid var(--line-soft); border-radius: 14px; padding: 20px 24px; margin: 18px 0; }
+  .doc a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="doc">
+  <p><a href="admin.html">← Back to admin</a></p>
+  <h1>Welcome to the ISAK admin 👋</h1>
+  <p>This is the control room for the website. It's deliberately simple. Here's everything you need to know.</p>
+
+  <h2>Signing in</h2>
+  <ol>
+    <li>Go to <code>/admin.html</code>.</li>
+    <li>Sign in with the email and password you set from your invite email.</li>
+    <li>Forgot your password? Use the "Forgot password?" link on the sign-in screen.</li>
+  </ol>
+
+  <h2>Adding an event</h2>
+  <p>Open the <strong>Events</strong> tab → fill in the form → <strong>Save event</strong>.</p>
+  <ul>
+    <li><strong>Title, date, time, location</strong> — what shows on the card.</li>
+    <li><strong>Image</strong> — upload a landscape photo (roughly 1200×800). It's stored in Supabase and shown on the card.</li>
+    <li><strong>Published</strong> — tick this to make it visible on the website. Leave unticked to keep it a draft.</li>
+  </ul>
+  <div class="card">Events appear automatically on the <strong>Events</strong> page and the <strong>home page</strong> (next 3 upcoming). If there are no published upcoming events, the site shows the built-in example cards instead — so the page is never empty.</div>
+
+  <h2>Approving members</h2>
+  <p>Open the <strong>Members</strong> tab. New sign-ups arrive as <em>pending</em>. They already get their welcome email + WhatsApp invite automatically — "Activate" is just for your own tracking. You can export the full list as CSV any time.</p>
+
+  <h2>The roadmap &amp; automated reminders</h2>
+  <p>The <strong>Roadmap</strong> tab powers two things:</p>
+  <ul>
+    <li>The public roadmap on the <strong>About</strong> page (any milestone with "Show on public roadmap" ticked).</li>
+    <li><strong>Automated email reminders.</strong> Each milestone has a due date, recipient emails and "reminder lead days". A daily job emails the recipients once the reminder window opens (e.g. 30 days before the e.V. registration deadline), then marks it sent so it never repeats.</li>
+  </ul>
+  <div class="card">Example already loaded: <em>"Register ISAK as e.V."</em> due Sep 2026 will email <code>anchalgupta.chp@gmail.com</code> 30 days before. Edit the recipients/dates as your team grows. Use "Reset reminder" to make it send again.</div>
+
+  <h2>Leads &amp; subscribers</h2>
+  <p><strong>Leads</strong> = students (often still in India) who asked for the pre-arrival guide. <strong>Subscribers</strong> = newsletter signups. Both are exportable to CSV for your mailing tool.</p>
+
+  <h2>Inviting another admin</h2>
+  <p>Open the <strong>Admins</strong> tab → enter their name + email → <strong>Send invite</strong>. They'll get an email to set a password and can then sign in.</p>
+
+  <h2>Good habits</h2>
+  <ul>
+    <li>Keep content honest — we're a new association and that's our strength.</li>
+    <li>Use real photos from our events wherever you can.</li>
+    <li>Never share the admin password; invite people properly instead.</li>
+  </ul>
+  <p style="margin-top:32px"><a href="admin.html">← Back to admin</a></p>
+</div>
+</body>
+</html>

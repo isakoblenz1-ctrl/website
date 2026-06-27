@@ -4,10 +4,11 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Contact & Join · ISAK Koblenz</title>
-<meta name="description" content="Join ISAK — it's free for all enrolled students at Hochschule Koblenz. Fill in your details and we'll be in touch within 48 hours."/>
+<meta name="description" content="Join ISAK — free for all Indian students at Hochschule Koblenz and Universität Koblenz. Fill in the form for an instant WhatsApp invite and a warm welcome."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=Tiro+Devanagari+Hindi&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="icon" type="image/png" href="assets/img/logo.png"/>
 <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
@@ -15,7 +16,7 @@
 <nav class="nav">
   <div class="nav-inner">
     <a href="index.html" class="logo">
-      <span class="mark"><svg viewBox="0 0 48 48" width="38" height="38"><defs><linearGradient id="lgi" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="var(--saffron)"/><stop offset="100%" stop-color="var(--marigold)"/></linearGradient></defs><rect x="23" y="1" width="2" height="6" fill="url(#lgi)" transform="rotate(0 24 24)"/><rect x="23" y="1" width="2" height="6" fill="url(#lgi)" transform="rotate(30 24 24)"/><rect x="23" y="1" width="2" height="6" fill="url(#lgi)" transform="rotate(60 24 24)"/><rect x="23" y="1" width="2" height="6" fill="url(#lgi)" transform="rotate(90 24 24)"/><rect x="23" y="1" width="2" height="6" fill="url(#lgi)" transform="rotate(120 24 24)"/><rect x="23" y="1" width="2" height="6" fill="url(#lgi)" transform="rotate(150 24 24)"/><rect x="23" y="1" width="2" height="6" fill="url(#lgi)" transform="rotate(180 24 24)"/><rect x="23" y="1" width="2" height="6" fill="url(#lgi)" transform="rotate(210 24 24)"/><rect x="23" y="1" width="2" height="6" fill="url(#lgi)" transform="rotate(240 24 24)"/><rect x="23" y="1" width="2" height="6" fill="url(#lgi)" transform="rotate(270 24 24)"/><rect x="23" y="1" width="2" height="6" fill="url(#lgi)" transform="rotate(300 24 24)"/><rect x="23" y="1" width="2" height="6" fill="url(#lgi)" transform="rotate(330 24 24)"/><circle cx="24" cy="24" r="16" fill="url(#lgi)"/><circle cx="24" cy="24" r="14" fill="var(--ink)"/><text x="24" y="32" text-anchor="middle" font-family="Tiro Devanagari Hindi, serif" font-size="20" fill="var(--cream)">इ</text></svg></span>
+      <span class="mark"><img src="assets/img/logo.png" alt="ISAK Koblenz" width="38" height="38"/></span>
       <span class="wm"><span class="one">ISAK</span><span class="two">Koblenz</span></span>
     </a>
     <div class="nav-links" id="nav-links">
@@ -24,6 +25,7 @@
       <a href="events.html" class="nav-link">Events</a>
       <a href="team.html" class="nav-link">Team</a>
       <a href="partners.html" class="nav-link">Partners</a>
+      <a href="india.html" class="nav-link">From India</a>
       <a href="blog.html" class="nav-link">Blog</a>
       <a href="documents.html" class="nav-link">Documents</a>
       <a href="contact.html" class="nav-link active">Contact</a>
@@ -41,7 +43,7 @@
   <div class="wrap" data-reveal>
     <div class="eyebrow"><span class="dot"></span>Become a Member</div>
     <h1 class="h-1 serif">Join ISAK.<br/><span class="serif-i" style="color:var(--accent)">It's free for students.</span></h1>
-    <p class="lede" style="margin-top:18px">Drop your details below and our welfare lead will be in touch within 48 hours with your member ID, WhatsApp group invite, and a link to the Welcome Handbook.</p>
+    <p class="lede" style="margin-top:18px">Drop your details below. You'll get an instant welcome email with your WhatsApp group invite and member ID — and a real person from ISAK will follow up personally within 48 hours.</p>
   </div>
   <div style="position:absolute;right:-60px;top:20px;opacity:0.35;pointer-events:none;animation:spin 40s linear infinite"><svg viewBox="-60 -60 120 120" width="200" height="200" aria-hidden="true"><ellipse cx="0" cy="-32" rx="11" ry="22" fill="var(--marigold)" transform="rotate(0)" opacity="0.92"/><ellipse cx="0" cy="-32" rx="11" ry="22" fill="var(--marigold)" transform="rotate(51.43)" opacity="0.92"/><ellipse cx="0" cy="-32" rx="11" ry="22" fill="var(--marigold)" transform="rotate(102.86)" opacity="0.92"/><ellipse cx="0" cy="-32" rx="11" ry="22" fill="var(--marigold)" transform="rotate(154.29)" opacity="0.92"/><ellipse cx="0" cy="-32" rx="11" ry="22" fill="var(--marigold)" transform="rotate(205.71)" opacity="0.92"/><ellipse cx="0" cy="-32" rx="11" ry="22" fill="var(--marigold)" transform="rotate(257.14)" opacity="0.92"/><ellipse cx="0" cy="-32" rx="11" ry="22" fill="var(--marigold)" transform="rotate(308.57)" opacity="0.92"/><circle cx="0" cy="0" r="10" fill="var(--saffron-deep)"/><circle cx="0" cy="0" r="5" fill="var(--marigold)"/></svg></div>
 </section>
@@ -52,7 +54,7 @@
     <div class="contact-grid">
 
       <!-- FORM -->
-      <form class="contact-form" data-reveal data-feedback action="#" method="post">
+      <form class="contact-form" id="join-form" data-reveal action="/api/join" method="post" novalidate>
         <div class="field row2">
           <div class="field">
             <label for="fname">First name</label>
@@ -89,12 +91,12 @@
             <input type="text" id="hometown" name="hometown" placeholder="Mumbai, Maharashtra"/>
           </div>
           <div class="field">
-            <label for="campus">Campus</label>
-            <select id="campus" name="campus">
+            <label for="university">University</label>
+            <select id="university" name="university">
               <option value="">Select…</option>
-              <option>RheinMoselCampus</option>
-              <option>RheinAhrCampus</option>
-              <option>Karthause Campus</option>
+              <option>Hochschule Koblenz</option>
+              <option>Universität Koblenz</option>
+              <option>Other / not enrolled yet</option>
             </select>
           </div>
         </div>
@@ -102,10 +104,17 @@
           <label for="interests">What are you looking for?</label>
           <textarea id="interests" name="interests" placeholder="Cultural events, mentorship, housing help, career advice, language exchange, just making friends…"></textarea>
         </div>
+        <label class="consent">
+          <input type="checkbox" id="consent" name="consent" required/>
+          <span>I agree that ISAK may store my details to contact me about membership, in line with the <a href="privacy.html">privacy notice</a>.</span>
+        </label>
+        <!-- honeypot: hidden from humans, bots fill it -->
+        <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0"/>
         <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:8px">
           <button class="btn btn-primary" type="submit">Send my application <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></button>
-          <span style="font-size:13px;color:var(--ink-muted)">We reply within 48 hours. Membership is completely free.</span>
+          <span style="font-size:13px;color:var(--ink-muted)">Instant WhatsApp invite. Membership is completely free.</span>
         </div>
+        <div class="form-status" id="join-status" role="status" aria-live="polite"></div>
       </form>
 
       <!-- CONTACT INFO -->
@@ -117,28 +126,28 @@
             <div class="ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
             <div>
               <div class="lbl">Email</div>
-              <div class="val">hello@isak-koblenz.de</div>
+              <div class="val"><a href="mailto:hello@isak-koblenz.de" style="color:inherit">hello@isak-koblenz.de</a></div>
             </div>
           </div>
           <div class="row">
-            <div class="ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s7-7.5 7-13a7 7 0 10-14 0c0 5.5 7 13 7 13z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+            <div class="ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1 4a.5.5 0 00.6.6l4-1A10 10 0 1012 2zm5.4 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-2.9-1.3-4.8-4.3-5-4.5-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.5c.2 0 .4 0 .7.5l.9 2c.1.2.1.4 0 .6l-.4.5-.3.4c-.1.1-.2.3 0 .5l.9 1.4c.7 1 1.4 1.4 1.9 1.7.5.3.8.2.9.2l.7-.6c.2-.2.5-.3.7-.2l1.9 1c.3.1.5.2.6.4.1.2.1.7-.1 1.2z"/></svg></div>
             <div>
-              <div class="lbl">Office</div>
-              <div class="val">Hochschule Koblenz, Building C<br/>Konrad-Zuse-Straße 1, 56075 Koblenz</div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></div>
-            <div>
-              <div class="lbl">WhatsApp helpline</div>
-              <div class="val">+49 261 555 0123</div>
+              <div class="lbl">WhatsApp community</div>
+              <div class="val"><a href="https://chat.whatsapp.com/LVNXqJU9LokG6B6aPOQeTa?mode=gi_t" target="_blank" rel="noopener" style="color:inherit">Join the group →</a></div>
             </div>
           </div>
           <div class="row">
             <div class="ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg></div>
             <div>
-              <div class="lbl">Open office hours</div>
-              <div class="val">Thursdays · 16:00 – 18:00<br/>Building C, Room 112</div>
+              <div class="lbl">Talk to the founder</div>
+              <div class="val"><a href="https://calendar.app.google/KZhLXSKXbqGw9Rvt8" target="_blank" rel="noopener" style="color:inherit">Book a 1:1 chat →</a></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s7-7.5 7-13a7 7 0 10-14 0c0 5.5 7 13 7 13z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+            <div>
+              <div class="lbl">Where we are</div>
+              <div class="val">Hochschule Koblenz &amp; Universität Koblenz<br/>Koblenz, Germany · online-first for now</div>
             </div>
           </div>
           <div style="margin-top:24px;padding-top:24px;border-top:1px solid rgba(250,244,232,0.12)">
@@ -183,11 +192,11 @@
       </div>
       <div class="faq-item">
         <div class="faq-q">What do I get as a member that non-members don't?</div>
-        <div class="faq-a">Early access and priority registration for workshops and ticketed events (Diwali Night sells out fast). Access to the members-only WhatsApp groups. Members-only documents (CV templates, housing guides). Eligibility for the annual ISAK Merit Scholarship. And a sense of belonging to the community — which is the whole point.</div>
+        <div class="faq-a">Access to our members-only WhatsApp groups, early access and priority registration for workshops and ticketed events, members-only resources (CV templates, housing guides as we build them), and a real say in how this new community grows. Most of all: people who have your back in Koblenz.</div>
       </div>
       <div class="faq-item">
         <div class="faq-q">How long does it take to activate my membership?</div>
-        <div class="faq-a">Our welfare lead checks applications twice a week. Expect a reply within 48 hours on weekdays. You'll receive your member ID, WhatsApp group invite, and a link to the Welcome Handbook in the reply email. If you're arriving for the start of semester and submitting in the rush, it may take up to 72 hours — we're volunteers with exam schedules too.</div>
+        <div class="faq-a">Instantly! Your welcome email — with the WhatsApp group invite and your member ID — is sent the moment you submit the form. A real person from ISAK then follows up personally within 48 hours on weekdays. We're volunteers with exam schedules too, so occasionally it's a little longer — but you're in the community from the second you join.</div>
       </div>
       <div class="faq-item">
         <div class="faq-q">Can I volunteer or help organise events?</div>
@@ -204,10 +213,10 @@
     <div class="footer-grid">
       <div>
         <a href="index.html" class="logo" style="color:var(--cream)">
-          <span class="mark"><svg viewBox="0 0 48 48" width="38" height="38"><defs><linearGradient id="lgi-f" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="var(--saffron)"/><stop offset="100%" stop-color="var(--marigold)"/></linearGradient></defs><rect x="23" y="1" width="2" height="6" fill="url(#lgi-f)" transform="rotate(0 24 24)"/><rect x="23" y="1" width="2" height="6" fill="url(#lgi-f)" transform="rotate(60 24 24)"/><rect x="23" y="1" width="2" height="6" fill="url(#lgi-f)" transform="rotate(120 24 24)"/><rect x="23" y="1" width="2" height="6" fill="url(#lgi-f)" transform="rotate(180 24 24)"/><rect x="23" y="1" width="2" height="6" fill="url(#lgi-f)" transform="rotate(240 24 24)"/><rect x="23" y="1" width="2" height="6" fill="url(#lgi-f)" transform="rotate(300 24 24)"/><circle cx="24" cy="24" r="16" fill="url(#lgi-f)"/><circle cx="24" cy="24" r="14" fill="var(--ink)"/><text x="24" y="32" text-anchor="middle" font-family="Tiro Devanagari Hindi, serif" font-size="20" fill="var(--cream)">इ</text></svg></span>
+          <span class="mark"><img src="assets/img/logo.png" alt="ISAK Koblenz" width="38" height="38"/></span>
           <span class="wm"><span class="one">ISAK</span><span class="two">Koblenz</span></span>
         </a>
-        <p style="font-size:14px;color:rgba(250,244,232,0.7);margin-top:20px;line-height:1.6;max-width:32ch">The Indian Students Association at Hochschule Koblenz.</p>
+        <p style="font-size:14px;color:rgba(250,244,232,0.7);margin-top:20px;line-height:1.6;max-width:32ch">The Indian Students Association Koblenz.</p>
         <div class="socials">
           <a class="social-btn" href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
           <a class="social-btn" href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zM8.3 18.3H5.7V9.7h2.6v8.6zM7 8.5a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm11.3 9.8h-2.6v-4.2c0-1 0-2.3-1.4-2.3s-1.6 1.1-1.6 2.2v4.3h-2.6V9.7h2.5v1.2c.4-.7 1.2-1.4 2.5-1.4 2.7 0 3.2 1.8 3.2 4.1v4.7z"/></svg></a>
@@ -227,5 +236,6 @@
 </footer>
 
 <script src="script.js"></script>
+<script src="forms.js"></script>
 </body>
 </html>
