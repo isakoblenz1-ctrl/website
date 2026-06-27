@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+Disallow: /admin-onboarding.html
+
+Sitemap: https://isak-koblenz.de/sitemap.xml

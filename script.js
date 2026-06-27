@@ -72,33 +72,5 @@
   });
 })();
 
-// Form submission feedback
-(function () {
-  document.querySelectorAll('form[data-feedback]').forEach(function (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      const btn = form.querySelector('button[type="submit"]');
-      if (btn) {
-        btn.textContent = '✓ Submitted — we\'ll be in touch!';
-        btn.disabled = true;
-        btn.style.background = 'var(--peacock)';
-      }
-    });
-  });
-})();
-
-// Newsletter form
-(function () {
-  document.querySelectorAll('.newsletter').forEach(function (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      const btn = form.querySelector('button');
-      const inp = form.querySelector('input');
-      if (btn && inp && inp.value) {
-        btn.textContent = '✓ Subscribed';
-        btn.disabled = true;
-        inp.disabled = true;
-      }
-    });
-  });
-})();
+// Note: real form submissions (membership, newsletter, lead capture) are
+// handled in forms.js, which POSTs to the /api functions.
