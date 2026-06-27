@@ -39,14 +39,21 @@ export default async function handler(req, res) {
       source: "website",
     };
 
-    const db = supabaseAdmin();
+    let db;
+    try {
+      db = supabaseAdmin();
+    } catch (cfgErr) {
+      console.error("supabase config error", cfgErr);
+      return res.status(500).json({ error: "Server not configured: missing SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY in Vercel env vars." });
+    }
+
     const { data, error } = await db.from("members").insert(row).select("member_id").single();
 
     // Duplicate email → treat as success (idempotent, friendly)
     let memberId = data?.member_id;
     if (error && !/duplicate|unique/i.test(error.message)) {
       console.error("members insert error", error);
-      return res.status(500).json({ error: "Could not save your application. Please try again." });
+      return res.status(500).json({ error: "Database error: " + (error.message || "could not save application") });
     }
 
     // Send emails (don't fail the request if email hiccups)
