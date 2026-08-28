@@ -20,7 +20,7 @@ export function resend() {
 }
 
 // From address — set EMAIL_FROM in Vercel once your domain is verified in Resend
-// (e.g. "ISAK Koblenz <hello@isak-koblenz.de>"). Falls back to Resend's sandbox.
+// (e.g. "ISAK Koblenz <info@isakoblenz.com>"). Falls back to Resend's sandbox.
 export const FROM = process.env.EMAIL_FROM || "ISAK Koblenz <onboarding@resend.dev>";
 
 export function founderEmails() {
