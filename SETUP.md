@@ -57,11 +57,11 @@ where email = 'anchalgupta.chp@gmail.com';
 ## Step 4 — Resend (email)
 
 1. Create an account at <https://resend.com>.
-2. **Domains → Add domain** `isak-koblenz.de` → add the shown DNS records at your domain
+2. **Domains → Add domain** `isakoblenz.com` → add the shown DNS records at your domain
    host (SPF/DKIM). Wait until it's **Verified**. (Until then, emails only send to your own
    address via Resend's sandbox `onboarding@resend.dev`.)
 3. **API Keys → Create** → copy the key for Vercel (Step 5).
-4. Once the domain is verified, set `EMAIL_FROM` to e.g. `ISAK Koblenz <hello@isak-koblenz.de>`.
+4. Once the domain is verified, set `EMAIL_FROM` to e.g. `ISAK Koblenz <info@isakoblenz.com>`.
 
 ## Step 5 — Vercel environment variables
 
@@ -73,11 +73,11 @@ Vercel → your project → **Settings → Environment Variables** (Production +
 | `SUPABASE_SERVICE_ROLE_KEY` | service_role key (secret!) |
 | `SUPABASE_ANON_KEY` | anon key |
 | `RESEND_API_KEY` | from Resend |
-| `EMAIL_FROM` | `ISAK Koblenz <hello@isak-koblenz.de>` (after domain verified) |
+| `EMAIL_FROM` | `ISAK Koblenz <info@isakoblenz.com>` (after domain verified) |
 | `FOUNDER_EMAILS` | `anchalgupta.chp@gmail.com` (comma-separate to add more) |
 | `WHATSAPP_INVITE_URL` | `https://chat.whatsapp.com/LVNXqJU9LokG6B6aPOQeTa?mode=gi_t` |
 | `CRON_SECRET` | any long random string |
-| `SITE_URL` | `https://isak-koblenz.de` (used for admin-invite links) |
+| `SITE_URL` | `https://isakoblenz.com` (used for admin-invite links) |
 
 ## Step 6 — Deploy
 

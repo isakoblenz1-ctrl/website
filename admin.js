@@ -174,7 +174,7 @@
       '<div class="grid2"><div class="adm-field"><label>Year</label><input id="rm-year" type="number"/></div>' +
       '<div class="adm-field"><label>Due date</label><input id="rm-due" type="date"/></div></div>' +
       '<div class="grid2"><div class="adm-field"><label>Reminder lead days</label><input id="rm-lead" type="number" value="14"/></div>' +
-      '<div class="adm-field"><label>Recipient emails (comma-separated)</label><input id="rm-emails" placeholder="anchalgupta.chp@gmail.com"/></div></div>' +
+      '<div class="adm-field"><label>Recipient emails (comma-separated)</label><input id="rm-emails" placeholder="info@isakoblenz.com"/></div></div>' +
       '<label class="consent" style="margin:4px 0 12px"><input type="checkbox" id="rm-pub" checked/> <span>Show on public roadmap</span></label><br/>' +
       '<button class="btn btn-primary btn-sm" type="submit">Save milestone</button> <button class="btn btn-ghost btn-sm" type="button" id="rm-reset">Clear</button>' +
       '<div id="rm-msg"></div></form></div><div id="rm-list">Loading…</div>';
